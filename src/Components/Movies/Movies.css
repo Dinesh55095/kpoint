@@ -1,0 +1,32 @@
+.movies {
+    padding: 1rem;
+}
+
+.movies .movies_year {
+    margin-bottom: 1rem;
+}
+
+.movies .movies_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.movies .movies_list .movie {
+    cursor: pointer;
+}
+.movies .movies_list .movie img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .movies .movies_list .movie {
+        flex-basis: calc(50% - 10px);
+    }
+}
